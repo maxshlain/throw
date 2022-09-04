@@ -1,10 +1,10 @@
 using Xunit;
 namespace Throw.Tests;
 
-public class UnitTest1
+public class IsNullTests
 {
     [Fact]
-    public void Test1()
+    public void WhenArgIsNotNull_DoesNotThrow()
     {
         ThrowIf.ThrowIf.IsNull(new object());
     }
